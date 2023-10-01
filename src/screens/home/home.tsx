@@ -10,7 +10,7 @@ import {
 	nioHouseTitles,
 } from './data';
 import './home.sass';
-import { motion, useTransform, useViewportScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 import cloudDesktop from '../../assets/home/videos/brandSection-cloud-desktop.mp4';
 
 import explore1 from '../../assets/home/images/explore-item-1.jpg';
@@ -137,9 +137,6 @@ const Home = () => {
 	const [activeSlide, setActiveSlide] = useState<number>(0);
 	const [activeHouseSlide, setActiveHouseSlide] = useState<number>(0);
 
-	const { scrollYProgress } = useViewportScroll();
-	const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
-
 	const scrollRef = useRef(null);
 
 	const scrollToTop = {
@@ -149,11 +146,6 @@ const Home = () => {
 			opacity: 1,
 			transition: { delay: custom * 0.3, duration: 0.5 },
 		}),
-	};
-
-	const blueSky = {
-		from: { zoom: 1.37959 },
-		to: { zoom: 3.3 },
 	};
 
 	return (

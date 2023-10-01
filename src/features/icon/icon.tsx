@@ -3,14 +3,14 @@ import clsx from 'clsx';
 import { memo, useEffect, useRef } from 'react';
 
 import { formatToStringWithPx } from '../../utils/format';
-import type { IconType } from './type';
-import { iconTypes } from './type';
+// import type { IconType } from './type';
+// import { iconTypes } from './type';
 import type { TColor } from './types';
 
 // EColorType, ETextColor
 import './Icon.scss';
 
-const getIcon = (type: string) => iconTypes.get(type);
+// const getIcon = (type: string) => iconTypes.get(type);
 
 interface IProps extends DOMAttributes<HTMLSpanElement> {
 	className?: string;
@@ -18,7 +18,7 @@ interface IProps extends DOMAttributes<HTMLSpanElement> {
 	dataTestId?: string;
 	height?: number;
 	size?: number;
-	type: IconType;
+	// type: IconType;
 	width?: number;
 }
 
@@ -29,7 +29,7 @@ const Component: FC<IProps> = ({
 	height,
 	width,
 	size,
-	type,
+	// type,
 	...rest
 }) => {
 	const iconRef = useRef<HTMLDivElement>(null);
@@ -66,7 +66,7 @@ const Component: FC<IProps> = ({
 			ref={iconRef}
 			{...rest}
 		>
-			{getIcon(type)}
+			{/* {getIcon(type)} */}
 		</div>
 	);
 };
