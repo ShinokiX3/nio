@@ -1,0 +1,299 @@
+.section-promo
+    position: relative
+
+    .slick-slider
+        position: relative 
+
+    .slick-dots
+        position: absolute
+        width: fit-content
+        left: 100px
+        bottom: 70px
+
+        button 
+            width: 32px!important
+            height: 1.6px!important
+
+        .slick-active button
+            position: relative
+            background-color: #939799
+            
+        .slick-active button::before
+            position: absolute
+            z-index: 20
+            display: block
+            height: 100%
+            width: 0px
+            background-color: white  
+            animation: filling 6s linear 0s infinite normal none
+    
+    .description
+        position: absolute
+        left: 100px
+        bottom: 150px
+
+        img
+            margin-bottom: 25px
+
+.section-discover
+    padding-top: 4em
+
+    .section-discover_title
+        font-size: 28px
+        line-height: 30px
+        text-align: center
+    
+    .car-titles
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 40px
+        padding: 45px 0px
+        
+        img
+            width: 40px
+
+    .slick-slider
+        height: fit-content
+        
+        img
+            max-width: 1172px
+        
+        div
+            height: 100%
+
+        .SliderSimple-Item
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+    
+    .section-discover_more
+        margin: 30px 0
+        display: flex
+        justify-content: center
+
+.section-bls
+    background-color: #f2f3ed
+
+    .bls-container
+        padding: 160px 80px 0
+    
+    .bls-bluesky
+        position: relative
+
+        video
+            width: 100%
+
+        .bluesky-message
+            position: absolute
+            left: 50%
+            top: 50%
+            text-align: center
+            transform: translate(-50%, -50%)
+        
+        .bluesky-message_title
+            // TODO: react motion zoom and opacity
+            zoom: 1.37959
+            font-size: 18px
+            color: white
+        
+        .bluesky-message_description
+            max-width: 479px
+            font-size: 28px
+            opacity: 0.302851
+            padding: 30px 0
+    
+    .discover-nio
+        padding-bottom: 45px
+
+        .discover-nio_title
+            text-align: center
+            margin-top: 105px
+            margin-bottom: 105px
+            font-size: 28px
+        
+        .item-container
+            display: grid
+            grid-template-columns: calc((100vw - 240px)/3) 40px calc((100vw - 240px)/3) 40px calc((100vw - 240px)/3)
+            grid-template-rows: calc((100vw - 240px)/3/1.9 + 48px) 40px auto 40px auto
+
+            .item
+                width: calc((100vw - 240px)/3)
+
+            .item:first-child
+                width: calc((100vw - 240px)/3*2 + 40px)
+
+            .item:nth-child(2)
+                grid-column-start: 1
+                grid-column-end: 2
+                grid-row-start: 5
+                grid-row-end: 6
+            
+            .item:nth-child(3)
+                grid-column-start: 3
+                grid-column-end: 4
+                grid-row-start: 5
+                grid-row-end: 6
+                transition-delay: .3s
+            
+            .item:nth-child(4)
+                grid-column-start: 5
+                grid-column-end: 6
+                grid-row-start: 1
+                grid-row-end: 2
+            
+            .item:nth-child(5)
+                grid-column-start: 5
+                grid-column-end: 6
+                grid-row-start: 3
+                grid-row-end: 6
+
+.image-scale
+    transition: transform .4s ease
+    transform-origin: 50% 50%
+
+    &:hover
+        transform: scale(1.05)
+
+.section-about
+    margin: 150px 80px 60px
+
+    .section-about_wrapper
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+
+        .about-banner
+            width: calc((100vw - 200px)/3*2 + 20px)
+            overflow: hidden
+
+            img
+                aspect-ratio: 1.6
+                width: calc((100vw - 200px)/3*2 + 20px)
+
+        .about-message
+            display: flex
+            flex-direction: column
+            justify-content: center
+            gap: 20px
+
+            button
+                width: fit-content
+        
+        .about-message_title
+            width: 118px
+        
+        .about-message_subtitle
+            color: #8e8e8e
+        
+        .about-message_text
+            max-width: 400px
+            font-size: 28px
+        
+    .about-detail
+        padding-top: 60px
+        display: flex
+        width: 100%
+        gap: 20px
+        height: auto
+        flex-direction: row
+        flex-wrap: nowrap
+
+.section-house
+    background-color: #000
+
+    .slick-slide
+        height: fit-content
+
+    .section-house_container
+        padding: 146px 80px 0
+
+    .house-wrapper
+        position: relative
+        height: fit-content
+
+    .house-description
+        width: 100%
+
+        img
+            width: 123px
+            margin-bottom: 20px
+
+    .house-description_wrapper
+        width: 100%
+        margin: 45px 0px
+        
+        &, div
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+
+        div
+            max-width: 481px
+            width: 100%
+            font-size: 28px
+            color: white
+
+    .nio-house-title
+        color: white
+        position: absolute
+        font-size: 12px
+        left: 14px
+        bottom: 10px
+
+.house-cards_wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 25px
+    height: fit-content
+
+.coffe-card
+    display: flex
+    width: calc(50vw - 102px)
+    aspect-ratio: 2.4
+    gap: 6px
+
+    .coffe-card-desc
+        font-size: 14px
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 10px 10px
+        width: 100%
+        background-color: #f2f3ed
+
+        img
+            width: 55px!important
+            height: 55px!important
+
+        p
+            color: #7d7d7d
+            font-size: 13.5px
+
+    .coffe-card-desc_title
+        width: 100%
+
+    img
+        height: auto
+        margin-bottom: 0px!important
+        width: 100%!important
+
+.house-learnmore
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 40px 120px
+
+
+
+@keyframes filling
+  from
+    width: 0px
+  to 
+    width: 100%

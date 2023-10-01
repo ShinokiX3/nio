@@ -1,0 +1,54 @@
+.custom-button
+    cursor: pointer
+    background-color: transparent
+    color: black
+    border: none
+    font-size: 12px
+    min-height: 32px
+
+    transition: all 0.2s ease
+
+.emphasized
+    color: white
+    padding: 0 20px
+    line-height: 44px
+    position: relative
+    
+    &:hover
+        &::after
+            content: ''
+            position: absolute
+            bottom: 7px
+            left: 50%
+            transform: translate(-50%, -50%)
+            display: block
+            height: 1px
+            width: 80%
+            background-color: white
+
+.bordered
+    border: 2px solid black
+    padding: 0 14px
+    line-height: 14px
+
+.bordered.white
+    color: white
+    border-color: white
+
+    &:hover
+        background-color: white
+        color: black
+
+.bordered.black
+    color: black
+    border-color: black
+
+    &:hover
+        background-color: black
+        color: white
+
+.ease
+    display: inline
+    line-height: inherit
+    font-weight: 400
+    font-size: 12px
