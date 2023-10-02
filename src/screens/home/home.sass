@@ -8,7 +8,7 @@
         position: absolute
         width: fit-content
         left: 100px
-        bottom: 70px
+        bottom: 70px!important
 
         button 
             width: 32px!important
@@ -290,6 +290,128 @@
     justify-content: center
     padding: 40px 120px
 
+@media (max-width: 1280px)
+    .section-promo 
+        .SliderSimple-Image
+            width: auto!important
+            height: 100vh
+
+    .section-bls
+        padding-top: 50px
+        overflow: auto
+
+        video
+            height: 100vh
+            object-fit: cover
+
+        .bls-container
+            padding: .90px 40px
+
+            .discover-nio
+                .item-container
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+
+                    .item
+                        width: calc(47vw - 35px)
+                        margin-bottom: 25px
+
+                    .item:first-child
+                        width: 100%
+    
+    .section-about 
+        margin: 90px 40px 60px
+
+        .about-banner
+            &, img 
+                width: 100%!important
+
+        .about-message
+            margin-top: 40px
+
+        .section-about_wrapper
+            flex-direction: column
+
+        .about-detail
+            height: 518px
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            justify-content: space-between
+
+            div:first-child
+                width: calc(50vw - 50px)
+                
+                img
+                    object-fit: cover
+                    height: 405px
+
+            div:nth-child(2), div:nth-child(3)
+                height: fit-content
+                
+                img
+                    width: 100%
+                    height: 165px
+    
+    .section-house
+        .section-house_container
+            padding: 90px 40px 0
+
+            .SliderSimple-Image
+                object-fit: cover
+                max-width: 100%
+                aspect-ratio: 1.6
+    
+    .coffe-card
+        width: 100%
+
+
+@media (max-width: 740px)
+    .section-promo
+        .slick-dots, .description
+            left: 25px
+
+    .section-discover
+        min-height: 100vh
+
+        .car-titles
+            max-width: 100vw
+            overflow: auto
+
+            // TODO: to scrollbar mixin
+
+            &::-webkit-scrollbar 
+                width: 5px
+                height: 5px
+
+            &::-webkit-scrollbar-track 
+                background: #f1f1f1
+
+            &::-webkit-scrollbar-thumb 
+                background: #cccccc
+
+            &::-webkit-scrollbar-thumb:hover 
+                background: #cccccc
+
+        .Slider-ArrowButton
+            display: none
+    
+    .section-bls
+        .bls-container
+            padding: 60px 16px 70px
+
+            .discover-nio
+                .item-container
+                    .item
+                        width: 100%
+    
+    .section-about 
+        margin: 90px 20px 60px
+    
+    .section-house
+        .section-house_container
+            padding: 60px 20px 0
 
 
 @keyframes filling

@@ -35,3 +35,37 @@
         display: flex
         li
             position: relative
+
+.menu
+    cursor: pointer
+    display: none
+    width: 20px
+    height: 10px
+    transform: translate(-50%,-50%)
+
+
+.links
+    display: flex
+
+@media (max-width: 1280px)
+    .wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+
+        .item:first-child
+            display: flex
+            align-items: center
+            justify-content: start
+            margin-left: 20px
+
+    .menu
+        display: block
+    
+    // TODO: temporary
+
+    .links, .lang
+        display: none!important
+
+
+// width: 16px
+// height: 11px

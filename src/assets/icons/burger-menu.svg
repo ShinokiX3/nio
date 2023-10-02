@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 18L23 18" stroke="#999999" stroke-width="0.8" stroke-linecap='square'/>
+    <path d="M4 12L23 12" stroke="#999999" stroke-width="0.8" stroke-linecap="square"/>
+    <path d="M4 6L23 6" stroke="#999999" stroke-width="0.8" stroke-linecap="square"/>
+</svg>
