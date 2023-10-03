@@ -37,13 +37,18 @@
 
 .section-discover
     padding-top: 4em
+    text-align: center
 
     .section-discover_title
         font-size: 28px
         line-height: 30px
-        text-align: center
+
+    .car-header
+        display: grid
+        gap: 7px
     
     .car-titles
+        margin-top: 20px
         width: 100%
         display: flex
         align-items: center
@@ -252,6 +257,13 @@
     gap: 25px
     height: fit-content
 
+    .house-cards_container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 25px
+        height: fit-content
+
 .coffe-card
     display: flex
     width: calc(50vw - 102px)
@@ -293,8 +305,9 @@
 @media (max-width: 1280px)
     .section-promo 
         .SliderSimple-Image
-            width: auto!important
-            height: 100vh
+            width: 100vw!important
+            height: 100vh!important
+            object-fit: cover
 
     .section-bls
         padding-top: 50px
@@ -366,6 +379,14 @@
     .coffe-card
         width: 100%
 
+@media (max-width: 970px)
+    .section-about 
+        .about-detail 
+            div:nth-child(2), div:nth-child(3)
+                img
+                    height: 135px
+
+
 
 @media (max-width: 740px)
     .section-promo
@@ -374,9 +395,28 @@
 
     .section-discover
         min-height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        .section-discover_title
+            font-size: 18px
+            font-weight: 400
+            line-height: 23px
+
+        .section-discover_subtitle
+            font-size: 10px
+            font-weight: 300
+            line-height: 13px
 
         .car-titles
-            max-width: 100vw
+            display: flex
+            justify-content: center
+            padding-top: 0px
+            padding-bottom: 20px
+            align-self: center
+
+            max-width: 90vw
             overflow: auto
 
             // TODO: to scrollbar mixin
@@ -426,6 +466,44 @@
     .section-house
         .section-house_container
             padding: 60px 20px 0
+
+@media (max-width: 524px)
+    .section-bls 
+        .bls-bluesky 
+            .bluesky-message_description
+                max-width: 100%!important
+                width: 90vw!important
+
+    .house-cards_wrapper
+        height: 200px!important
+        width: 100%
+        overflow: hidden
+        flex-wrap: nowrap
+        height: fit-content
+
+        .house-cards_container
+            height: 100%
+            flex-wrap: nowrap
+            width: max-content
+            display: flex
+            overflow-y: hidden
+            overflow-x: auto
+
+            &::-webkit-scrollbar 
+                width: 5px
+                height: 5px
+
+            &::-webkit-scrollbar-track 
+                background: #f1f1f1
+
+            &::-webkit-scrollbar-thumb 
+                background: #cccccc
+
+            &::-webkit-scrollbar-thumb:hover 
+                background: #cccccc
+    
+    .coffe-card
+        width: fit-content
 
 
 @keyframes filling

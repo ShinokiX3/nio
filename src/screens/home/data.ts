@@ -17,6 +17,13 @@ import es8wm from '../../assets/home/images/vehicle-slider-es8-prime-desktop.jpg
 import et5twm from '../../assets/home/images/vehicle-slider-et5-touring-desktop.png';
 import et5wm from '../../assets/home/images/et5-desktop.png';
 
+import m_ec6wm from '../../assets/home/images/vehicle-slider-ec6-mobile.png';
+import m_ec7wm from '../../assets/home/images/vehicle-slider-ec7-mobile.png';
+import m_es6wm from '../../assets/home/images/vehicle-slider-es6-mobile.png';
+import m_es8wm from '../../assets/home/images/vehicle-slider-es8-prime-mobile.png';
+import m_et5twm from '../../assets/home/images/vehicle-slider-et5-touring-mobile.png';
+import m_et5wm from '../../assets/home/images/et5-mobile.png';
+
 import t_ec6bl from '../../assets/home/images/discover/EC6-Black.svg';
 import t_ec7 from '../../assets/home/images/discover/EC7.svg';
 import t_es6 from '../../assets/home/images/discover/ES6.svg';
@@ -33,7 +40,17 @@ import niohouse4 from '../../assets/home/images/1664508907963-nioHouse.banners.3
 
 export const sliderVideos = [et5, et5desk, es6, ec7, es8];
 export const sliderDescriptions = [d_et5desk, d_et5, d_es6, d_ec7, d_es8];
+
 export const sliderExploreCars = [ec6wm, ec7wm, es6wm, es8wm, et5twm, et5wm];
+export const sliderExploreCarsMobile = [
+	m_ec6wm,
+	m_ec7wm,
+	m_es6wm,
+	m_es8wm,
+	m_et5twm,
+	m_et5wm,
+];
+
 export const sliderTitleCars = [
 	t_ec6bl,
 	t_ec7,

@@ -51,70 +51,72 @@ const House = () => {
 						</div>
 					</div>
 					<div className="house-cards_wrapper">
-						<motion.div
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ amount: 0.3 }}
-							variants={scrollToTop}
-							className="coffe-card"
-						>
-							<div className="coffe-card-desc">
-								<img src={slier1} alt="Slider1" />
-								<div className="coffe-card-desc_title">
-									<h3>Living Café</h3>
-									<p>Savor drinks, and enjoy your time.</p>
+						<div className="house-cards_container">
+							<motion.div
+								initial="hidden"
+								whileInView="visible"
+								viewport={{ amount: 0.1 }}
+								variants={scrollToTop}
+								className="coffe-card"
+							>
+								<div className="coffe-card-desc">
+									<img src={slier1} alt="Slider1" />
+									<div className="coffe-card-desc_title">
+										<h3>Living Café</h3>
+										<p>Savor drinks, and enjoy your time.</p>
+									</div>
 								</div>
-							</div>
-							<img src={nioslider1} alt="Coffe card item" />
-						</motion.div>
-						<motion.div
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ amount: 0.3 }}
-							variants={scrollToTop}
-							className="coffe-card"
-						>
-							<div className="coffe-card-desc">
-								<img src={slier2} alt="Slider2" />
-								<div className="coffe-card-desc_title">
-									<h3>Living Café</h3>
-									<p>Savor drinks, and enjoy your time.</p>
+								<img src={nioslider1} alt="Coffe card item" />
+							</motion.div>
+							<motion.div
+								initial="hidden"
+								whileInView="visible"
+								viewport={{ amount: 0.1 }}
+								variants={scrollToTop}
+								className="coffe-card"
+							>
+								<div className="coffe-card-desc">
+									<img src={slier2} alt="Slider2" />
+									<div className="coffe-card-desc_title">
+										<h3>Living Café</h3>
+										<p>Savor drinks, and enjoy your time.</p>
+									</div>
 								</div>
-							</div>
-							<img src={nioslider2} alt="Coffe card item" />
-						</motion.div>
-						<motion.div
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ amount: 0.3 }}
-							variants={scrollToTop}
-							className="coffe-card"
-						>
-							<div className="coffe-card-desc">
-								<img src={slier3} alt="Slider3" />
-								<div className="coffe-card-desc_title">
-									<h3>Living Café</h3>
-									<p>Savor drinks, and enjoy your time.</p>
+								<img src={nioslider2} alt="Coffe card item" />
+							</motion.div>
+							<motion.div
+								initial="hidden"
+								whileInView="visible"
+								viewport={{ amount: 0.1 }}
+								variants={scrollToTop}
+								className="coffe-card"
+							>
+								<div className="coffe-card-desc">
+									<img src={slier3} alt="Slider3" />
+									<div className="coffe-card-desc_title">
+										<h3>Living Café</h3>
+										<p>Savor drinks, and enjoy your time.</p>
+									</div>
 								</div>
-							</div>
-							<img src={nioslider3} alt="Coffe card item" />
-						</motion.div>
-						<motion.div
-							initial="hidden"
-							whileInView="visible"
-							viewport={{ amount: 0.3 }}
-							variants={scrollToTop}
-							className="coffe-card"
-						>
-							<div className="coffe-card-desc">
-								<img src={slier4} alt="Slider4" />
-								<div className="coffe-card-desc_title">
-									<h3>Living Café</h3>
-									<p>Savor drinks, and enjoy your time.</p>
+								<img src={nioslider3} alt="Coffe card item" />
+							</motion.div>
+							<motion.div
+								initial="hidden"
+								whileInView="visible"
+								viewport={{ amount: 0.1 }}
+								variants={scrollToTop}
+								className="coffe-card"
+							>
+								<div className="coffe-card-desc">
+									<img src={slier4} alt="Slider4" />
+									<div className="coffe-card-desc_title">
+										<h3>Living Café</h3>
+										<p>Savor drinks, and enjoy your time.</p>
+									</div>
 								</div>
-							</div>
-							<img src={nioslider4} alt="Coffe card item" />
-						</motion.div>
+								<img src={nioslider4} alt="Coffe card item" />
+							</motion.div>
+						</div>
 					</div>
 					<motion.div
 						initial="hidden"
