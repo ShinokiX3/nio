@@ -1,8 +1,7 @@
-// TODO: manage file paths
 import './promo.sass';
 import { useState } from 'react';
-import { SliderSimple } from '../../../../features/sliders/slider/simple';
-import Button from '../../../../components/buttons/button';
+import { SliderSimple } from '@features/sliders/slider/simple';
+import Button from '@components/buttons/button';
 
 interface IPromo {
 	videos: string[];

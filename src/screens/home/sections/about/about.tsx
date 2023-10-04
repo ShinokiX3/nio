@@ -1,10 +1,9 @@
+import './about.sass';
 import { motion } from 'framer-motion';
-import Button from '../../../../components/buttons/button';
-import Card from '../../../../components/cards/card';
 import { IImage } from '../../home';
 import { scrollToTop } from '../../animations';
-
-import './about.sass';
+import Button from '@components/buttons/button';
+import Card from '@components/cards/card';
 
 interface IAbout {
 	banner: string;

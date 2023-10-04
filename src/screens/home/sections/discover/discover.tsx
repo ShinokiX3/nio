@@ -1,9 +1,9 @@
 import './discover.sass';
 import { motion } from 'framer-motion';
-import { SliderSimple } from '../../../../features/sliders/slider/simple';
+import { SliderSimple } from '@features/sliders/slider/simple';
 import { scrollToTop } from '../../animations';
 import { useMediaQuery } from 'react-responsive';
-import Button from '../../../../components/buttons/button';
+import Button from '@components/buttons/button';
 
 interface IDiscover {
 	title: string;

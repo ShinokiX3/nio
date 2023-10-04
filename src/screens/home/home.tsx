@@ -1,8 +1,8 @@
 import './home.sass';
-import powerbanner from '../../assets/home/images/nio-power-banner-desktop.jpg';
-import servicebanner from '../../assets/home/images/nio-service-banner-desktop.jpg';
-import niopowertitle from '../../assets/home/svg/nio-power-logo.svg';
-import nioservicetitle from '../../assets/home/svg/nio-service-logo.svg';
+import powerbanner from '@assets/home/images/nio-power-banner-desktop.jpg';
+import servicebanner from '@assets/home/images/nio-service-banner-desktop.jpg';
+import niopowertitle from '@assets/home/svg/nio-power-logo.svg';
+import nioservicetitle from '@assets/home/svg/nio-service-logo.svg';
 import { About, Bls, Discover, House, Promo } from './sections';
 import {
 	powerslides,

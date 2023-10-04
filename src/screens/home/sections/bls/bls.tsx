@@ -2,10 +2,10 @@ import './bls.sass';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { scrollToTop } from '../../animations';
-import Card from '../../../../components/cards/card';
-import Button from '../../../../components/buttons/button';
-import cloudDesktop from '../../../../assets/home/videos/brandSection-cloud-desktop.mp4';
 import { explores } from '../../data';
+import Card from '@components/cards/card';
+import Button from '@components/buttons/button';
+import cloudDesktop from '@assets/home/videos/brandSection-cloud-desktop.mp4';
 
 const Bls = () => {
 	const scrollRef = useRef(null);
