@@ -5,6 +5,8 @@ import niopowertitle from '@assets/home/svg/nio-power-logo.svg';
 import nioservicetitle from '@assets/home/svg/nio-service-logo.svg';
 import { About, Bls, Discover, House, Promo } from './sections';
 import {
+	houseCardsDescriptions,
+	houseCardsImages,
 	powerslides,
 	serviceslides,
 	sliderDescriptions,
@@ -50,7 +52,7 @@ const Home = () => {
 				text="A reassuring service experience enabled by NIO's cloud technology."
 				slides={serviceslides}
 			/>
-			<House />
+			<House images={houseCardsImages} descriptions={houseCardsDescriptions} />
 		</div>
 	);
 };

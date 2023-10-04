@@ -1,3 +1,5 @@
+// TODO: rework sources
+
 import et5 from '@assets/home/videos/et5-touring-video.mp4';
 import et5desk from '@assets/home/videos/homepage-slider-et5-desktop.mp4';
 import es6 from '@assets/home/videos/top-hero-es6.mp4';
@@ -51,6 +53,24 @@ import explore2 from '@assets/home/images/1671174630837-bslSection.explore.items
 import explore3 from '@assets/home/images/1682477336938-bslSection.explore.items.4.src-B2D90FFDCB239D60.jpg';
 import explore4 from '@assets/home/images/explore-item-4.jpg';
 import explore5 from '@assets/home/images/explore-item-5.jpg';
+
+import nioslider1 from '@assets/home/images/slider-1-desktop.jpg';
+import nioslider2 from '@assets/home/images/slider-2-desktop.jpg';
+import nioslider3 from '@assets/home/images/slider-3-desktop.jpg';
+import nioslider4 from '@assets/home/images/slider-4-desktop.jpg';
+
+import slier1 from '@assets/home/svg/slider-1-icon.svg';
+import slier2 from '@assets/home/svg/slider-2-icon.svg';
+import slier3 from '@assets/home/svg/slider-3-icon.svg';
+import slier4 from '@assets/home/svg/slider-4-icon.svg';
+
+export const houseCardsDescriptions = [
+	nioslider1,
+	nioslider2,
+	nioslider3,
+	nioslider4,
+];
+export const houseCardsImages = [slier1, slier2, slier3, slier4];
 
 export const sliderVideos = [et5, et5desk, es6, ec7, es8];
 export const sliderDescriptions = [d_et5desk, d_et5, d_es6, d_ec7, d_es8];

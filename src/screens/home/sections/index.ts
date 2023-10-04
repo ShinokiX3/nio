@@ -1,4 +1,4 @@
-import House from '../house/house';
+import House from './house/house';
 import Promo from './promo/promo';
 import About from './about/about';
 import Bls from './bls/bls';
