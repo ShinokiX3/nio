@@ -16,6 +16,8 @@ import slier3 from '../../../assets/home/svg/slider-3-icon.svg';
 import slier4 from '../../../assets/home/svg/slider-4-icon.svg';
 import Button from '../../../components/buttons/button';
 
+import './house.sass';
+
 const House = () => {
 	const [activeHouseSlide, setActiveHouseSlide] = useState<number>(0);
 

@@ -1,0 +1,117 @@
+.section-bls
+    background-color: #f2f3ed
+
+    .bls-container
+        padding: 160px 80px 0
+    
+    .bls-bluesky
+        position: relative
+
+        video
+            width: 100%
+
+        .bluesky-message
+            position: absolute
+            left: 50%
+            top: 50%
+            text-align: center
+            transform: translate(-50%, -50%)
+        
+        .bluesky-message_title
+            // TODO: react motion zoom and opacity
+            zoom: 1.37959
+            font-size: 18px
+            color: white
+        
+        .bluesky-message_description
+            max-width: 479px
+            font-size: 28px
+            opacity: 0.302851
+            padding: 30px 0
+    
+    .discover-nio
+        padding-bottom: 45px
+
+        .discover-nio_title
+            text-align: center
+            margin-top: 105px
+            margin-bottom: 105px
+            font-size: 28px
+        
+        .item-container
+            display: grid
+            grid-template-columns: calc((100vw - 240px)/3) 40px calc((100vw - 240px)/3) 40px calc((100vw - 240px)/3)
+            grid-template-rows: calc((100vw - 240px)/3/1.9 + 48px) 40px auto 40px auto
+
+            .item
+                width: calc((100vw - 240px)/3)
+
+            .item:first-child
+                width: calc((100vw - 240px)/3*2 + 40px)
+
+            .item:nth-child(2)
+                grid-column-start: 1
+                grid-column-end: 2
+                grid-row-start: 5
+                grid-row-end: 6
+            
+            .item:nth-child(3)
+                grid-column-start: 3
+                grid-column-end: 4
+                grid-row-start: 5
+                grid-row-end: 6
+                transition-delay: .3s
+            
+            .item:nth-child(4)
+                grid-column-start: 5
+                grid-column-end: 6
+                grid-row-start: 1
+                grid-row-end: 2
+            
+            .item:nth-child(5)
+                grid-column-start: 5
+                grid-column-end: 6
+                grid-row-start: 3
+                grid-row-end: 6
+
+@media (max-width: 1280px)
+    .section-bls
+        padding-top: 50px
+        overflow: auto
+
+        video
+            height: 100vh
+            object-fit: cover
+
+        .bls-container
+            padding: .90px 40px
+
+            .discover-nio
+                .item-container
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+
+                    .item
+                        width: calc(47vw - 35px)
+                        margin-bottom: 25px
+
+                    .item:first-child
+                        width: 100%
+
+@media (max-width: 740px)
+    .section-bls
+        .bls-container
+            padding: 60px 16px 70px
+
+            .discover-nio
+                .item-container
+                    .item
+                        width: 100%
+
+@media (max-width: 524px)
+    .section-bls 
+        .bls-bluesky 
+            .bluesky-message_description
+                max-width: 100%!important
+                width: 90vw!important

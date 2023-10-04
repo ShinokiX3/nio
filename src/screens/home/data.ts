@@ -38,6 +38,20 @@ import niohouse2 from '../../assets/home/images/nio-house-banner-desktop-2.jpg';
 import niohouse3 from '../../assets/home/images/nio-house-banner-desktop-3.jpg';
 import niohouse4 from '../../assets/home/images/1664508907963-nioHouse.banners.3.mediaSources.0.src-D8AEEAF2E80E8EB8.jpg';
 
+import niopowerslide1 from '../../assets/home/images/nio-power-slider-1-desktop.jpg';
+import niopowerslide2 from '../../assets/home/images/nio-power-slider-2-desktop.jpg';
+import niopowerslide3 from '../../assets/home/images/nio-power-slider-3-desktop.jpg';
+
+import nioserviceslide1 from '../../assets/home/images/nio-service-slider-1-desktop.jpg';
+import nioserviceslide2 from '../../assets/home/images/nio-service-slider-2-desktop.jpg';
+import nioserviceslide3 from '../../assets/home/images/nio-service-slider-3-desktop.jpg';
+
+import explore1 from '../../assets/home/images/explore-item-1.jpg';
+import explore2 from '../../assets/home/images/1671174630837-bslSection.explore.items.1.src-B970EE31B1A41026.jpg';
+import explore3 from '../../assets/home/images/1682477336938-bslSection.explore.items.4.src-B2D90FFDCB239D60.jpg';
+import explore4 from '../../assets/home/images/explore-item-4.jpg';
+import explore5 from '../../assets/home/images/explore-item-5.jpg';
+
 export const sliderVideos = [et5, et5desk, es6, ec7, es8];
 export const sliderDescriptions = [d_et5desk, d_et5, d_es6, d_ec7, d_es8];
 
@@ -67,4 +81,90 @@ export const nioHouseTitles = [
 	'NIO House, Hefei',
 	'NIO House, Foshan',
 	'NIO House, Ningbo',
+];
+
+export const powerslides = [
+	{
+		image: { src: niopowerslide1, alt: 'Nio power slide 1' },
+		description: {
+			title: 'NIO Power Home',
+			desc: `Wake up and hit the road with full battery`,
+		},
+	},
+	{
+		image: { src: niopowerslide2, alt: 'Nio power slide 2' },
+		description: {
+			title: 'Power Swap Station',
+			desc: `Fully-automatic battery swap in just a short coffee break`,
+		},
+	},
+	{
+		image: { src: niopowerslide3, alt: 'Nio power slide 3' },
+		description: {
+			title: 'Power Mobile',
+			desc: `Recharge 100 km of range in just 10 minutes`,
+		},
+	},
+];
+
+export const serviceslides = [
+	{
+		image: { src: nioserviceslide1, alt: 'Nio service slide 1' },
+		description: {
+			title: '10-Year Unlimited Warranty',
+			desc: `Always reassuring on the roads`,
+		},
+	},
+	{
+		image: { src: nioserviceslide2, alt: 'Nio service slide 2' },
+		description: {
+			title: 'Worry-Free Service Package',
+			desc: `20+ after-sales scenarios for a hassle-free experience`,
+		},
+	},
+	{
+		image: { src: nioserviceslide3, alt: 'Nio service slide 3' },
+		description: {
+			title: 'Lifetime Free Roadside Rescue',
+			desc: `On call 24/7 to come to your rescue whenever and wherever you are`,
+		},
+	},
+];
+
+export const explores = [
+	{
+		image: { src: explore1, alt: 'Discover Nio' },
+		description: {
+			title: 'EVE',
+			desc: `Our vision for an autonomous car of the future`,
+		},
+	},
+	{
+		image: { src: explore2, alt: 'Discover Nio' },
+		description: {
+			title: 'EP9',
+			desc: `One of the fastest electric cars in the world`,
+		},
+	},
+	{
+		image: { src: explore4, alt: 'Discover Nio' },
+		description: {
+			title: 'NIO Life',
+			desc: `NIO's original design and lifestyle brand`,
+		},
+	},
+	{
+		image: { src: explore5, alt: 'Discover Nio' },
+		description: {
+			title: 'Clean Parks',
+			desc: `An ecological co-construction initiative launched by NIO`,
+		},
+	},
+	{
+		image: { src: explore3, alt: 'Discover Nio' },
+		description: {
+			title: '10 Billion Kilometers and Beyond',
+			desc: `NIO Users Cumulative Mileage Exceeds 10B Kilometers10 Billion Kilometers and Beyond`,
+		},
+	},
 ];

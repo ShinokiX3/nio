@@ -1,0 +1,54 @@
+.section-promo
+    position: relative
+
+    .slick-slider
+        position: relative 
+
+    .slick-dots
+        position: absolute
+        width: fit-content
+        left: 100px
+        bottom: 70px!important
+
+        button 
+            width: 32px!important
+            height: 1.6px!important
+
+        .slick-active button
+            position: relative
+            background-color: #939799
+            
+        .slick-active button::before
+            position: absolute
+            z-index: 20
+            display: block
+            height: 100%
+            width: 0px
+            background-color: white  
+            animation: filling 6s linear 0s infinite normal none
+    
+    .description
+        position: absolute
+        left: 100px
+        bottom: 150px
+
+        img
+            margin-bottom: 25px
+
+@media (max-width: 1280px)
+    .section-promo 
+        .SliderSimple-Image
+            width: 100vw!important
+            height: 100vh!important
+            object-fit: cover
+
+@media (max-width: 740px)
+    .section-promo
+        .slick-dots, .description
+            left: 25px
+
+@keyframes filling
+  from
+    width: 0px
+  to 
+    width: 100%

@@ -1,0 +1,88 @@
+.section-discover
+    padding-top: 4em
+    text-align: center
+
+    .section-discover_title
+        font-size: 28px
+        line-height: 30px
+
+    .car-header
+        display: grid
+        gap: 7px
+    
+    .car-titles
+        margin-top: 20px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 40px
+        padding: 45px 0px
+        
+        img
+            width: 40px
+
+    .slick-slider
+        height: fit-content
+        
+        img
+            max-width: 1172px
+        
+        div
+            height: 100%
+
+        .SliderSimple-Item
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+    
+    .section-discover_more
+        margin: 30px 0
+        display: flex
+        justify-content: center
+
+@media (max-width: 740px)
+    .section-discover
+        min-height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        .section-discover_title
+            font-size: 18px
+            font-weight: 400
+            line-height: 23px
+
+        .section-discover_subtitle
+            font-size: 10px
+            font-weight: 300
+            line-height: 13px
+
+        .car-titles
+            display: flex
+            justify-content: center
+            padding-top: 0px
+            padding-bottom: 20px
+            align-self: center
+
+            max-width: 90vw
+            overflow: auto
+
+            // TODO: to scrollbar mixin
+
+            &::-webkit-scrollbar 
+                width: 5px
+                height: 5px
+
+            &::-webkit-scrollbar-track 
+                background: #f1f1f1
+
+            &::-webkit-scrollbar-thumb 
+                background: #cccccc
+
+            &::-webkit-scrollbar-thumb:hover 
+                background: #cccccc
+
+        .Slider-ArrowButton
+            display: none

@@ -1,9 +1,15 @@
+// TODO: manage file paths
+import './promo.sass';
 import { useState } from 'react';
-import { SliderSimple } from '../../../features/sliders/slider/simple';
-import { sliderDescriptions, sliderVideos } from '../data';
-import Button from '../../../components/buttons/button';
+import { SliderSimple } from '../../../../features/sliders/slider/simple';
+import Button from '../../../../components/buttons/button';
 
-const Promo = () => {
+interface IPromo {
+	videos: string[];
+	descriptions: string[];
+}
+
+const Promo: React.FC<IPromo> = ({ videos, descriptions }) => {
 	const [activeSlide, setActiveSlide] = useState<number>(0);
 
 	return (
@@ -12,7 +18,7 @@ const Promo = () => {
 				arrows={false}
 				dots={true}
 				fade={true}
-				videos={sliderVideos}
+				videos={videos}
 				infinite={true}
 				autoplay={true}
 				autoplaySpeed={6000}
@@ -21,7 +27,7 @@ const Promo = () => {
 				}}
 			/>
 			<div className="description">
-				<img src={sliderDescriptions[activeSlide]} alt="Promo car explained" />
+				<img src={descriptions[activeSlide]} alt="Promo car explained" />
 				<Button
 					type="bordered"
 					color="white"

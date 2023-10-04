@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
-import Button from '../../../components/buttons/button';
-import Card from '../../../components/cards/card';
-import { IImage } from '../home';
-import { scrollToTop } from '../animations';
+import Button from '../../../../components/buttons/button';
+import Card from '../../../../components/cards/card';
+import { IImage } from '../../home';
+import { scrollToTop } from '../../animations';
+
+import './about.sass';
 
 interface IAbout {
 	banner: string;
@@ -39,6 +41,7 @@ const About: React.FC<IAbout> = ({ banner, title, text, subtitle, slides }) => {
 			<div className="about-detail">
 				{slides.map(({ image, description }, index) => (
 					<motion.div
+						key={image.src}
 						initial="hidden"
 						whileInView="visible"
 						custom={index}

@@ -1,15 +1,26 @@
+import './discover.sass';
 import { motion } from 'framer-motion';
-import { SliderSimple } from '../../../features/sliders/slider/simple';
-import Button from '../../../components/buttons/button';
-import { scrollToTop } from '../animations';
-import {
-	sliderExploreCars,
-	sliderExploreCarsMobile,
-	sliderTitleCars,
-} from '../data';
+import { SliderSimple } from '../../../../features/sliders/slider/simple';
+import { scrollToTop } from '../../animations';
 import { useMediaQuery } from 'react-responsive';
+import Button from '../../../../components/buttons/button';
 
-const Discover = () => {
+interface IDiscover {
+	title: string;
+	subtitle: string;
+	sliderTitles: string[];
+	sliderCars: {
+		desktop: string[];
+		mobile: string[];
+	};
+}
+
+const Discover: React.FC<IDiscover> = ({
+	title,
+	subtitle,
+	sliderTitles,
+	sliderCars,
+}) => {
 	// TODO: media variables to constants
 	const isMobileScreen = useMediaQuery({ query: '(max-width: 1024px)' });
 
@@ -21,16 +32,14 @@ const Discover = () => {
 			className="section-discover"
 		>
 			<motion.div custom={1} variants={scrollToTop} className="car-header">
-				<h3 className="section-discover_title">Explore all the NIO models</h3>
+				<h3 className="section-discover_title">{title}</h3>
 				{isMobileScreen ? (
-					<p className="section-discover_subtitle">
-						Swipe left and right to view more models
-					</p>
+					<p className="section-discover_subtitle">{subtitle}</p>
 				) : null}
 			</motion.div>
 			<motion.div custom={2} variants={scrollToTop} className="car-titles">
-				{sliderTitleCars.map((image) => (
-					<img src={image} alt="Car title" />
+				{sliderTitles.map((image) => (
+					<img key={image} src={image} alt="Car title" />
 				))}
 			</motion.div>
 			<motion.div custom={3} variants={scrollToTop}>
@@ -38,7 +47,7 @@ const Discover = () => {
 					arrows={true}
 					dots={false}
 					fade={false}
-					images={!isMobileScreen ? sliderExploreCars : sliderExploreCarsMobile}
+					images={!isMobileScreen ? sliderCars.desktop : sliderCars.mobile}
 					infinite={true}
 					autoplay={false}
 					beforeChange={(_, next) => {
